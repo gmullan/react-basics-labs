@@ -55,7 +55,12 @@ const AddTaskForm = (props) => {
     sx={{
       m: 1,
       p: 1,
-      width: '95%'
+      width: '95%',
+      backgroundColor: '#FFD1DC',
+    color: 'black',
+    '&:hover': {
+      backgroundColor: '#FFB6C1'
+    }
     }}
   >
     Add Task

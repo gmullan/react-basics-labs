@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Alert from '@mui/material/Alert';
 
 
 
@@ -76,6 +77,19 @@ function App() {
     <div className="container">
     
       {/* App Header */}
+<Container maxWidth="md">
+  <Alert severity="info" 
+  sx={{
+      mb: 3,
+      backgroundColor: '#FFD1DC',
+      color: 'black',
+      borderRadius: '8px'
+    }}
+  >
+    Welcome to Tasky! Add your tasks below to get started.
+  </Alert>
+</Container>
+
 <Container component="main">
   <Typography
     component="h1"
@@ -83,9 +97,9 @@ function App() {
     align="center"
     gutterBottom
     sx={{
-      backgroundColor: 'gray',
+      backgroundColor: '#FFFACD',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
       padding: '20px',
       margin: '20px 0 40px 0',
       borderRadius: '4px'
